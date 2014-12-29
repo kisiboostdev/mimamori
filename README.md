@@ -1,3 +1,19 @@
+CakePHP練習用です。
+OMRON社のOKAO Visionが採取した感情データをAndroidアプリ経由でPOSTされた
+データをDBに保存し、topページに表示する。
+一定期間の感情データが閾値を超えると登録済みtwitterへの通知を行うWebAPI
+を呼び出します。
+
+topページ
+　https://example.com/top
+
+感情データ初期化＆サンプルデータ登録
+　https://example.com/init
+
+Twitter通知機能の強制呼び出し
+　https://example.com/alert
+
+
 # CakePHP
 
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
