@@ -6,17 +6,21 @@ topページは５秒毎にポーリングして直近５秒の感情データ�
 が一定量以上のユーザ名を抽出し、登録済みtwitterIDに通知すべく、Twitter通知
 WebAPIを呼び出します。
 
+
 topページ
 　https://example.com/top
 
+
 感情データ初期化＆サンプルデータ登録
 　https://example.com/init
+
 
 Twitter通知機能の強制呼び出し
 　https://example.com/alert
 
 
 ※CakePHP練習用に作ったWebアプリのため、セキュリティ対策全般に緩いです。
+
 ※database.phpは環境に合わせ修正が必要です。
 
 
