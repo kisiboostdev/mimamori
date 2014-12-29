@@ -1,8 +1,10 @@
-CakePHP練習用です。
-OMRON社のOKAO Visionが採取した感情データをAndroidアプリ経由でPOSTされた
-データをDBに保存し、topページに表示する。
-一定期間の感情データが閾値を超えると登録済みtwitterへの通知を行うWebAPI
-を呼び出します。
+OMRON社のOKAO Visionが採取した感情データをAndroidアプリがBluetoothで取得し
+本アプリにPOSTします。
+本アプリはPOSTデータをDBに保存し、topページでグラフ表示します。
+topページは５秒毎にポーリングして直近５秒の感情データをグラフに反映します。
+サーバ側では定期的に監視プログラムが動作し、10分以内のネガティブ系感情データ
+が一定量以上のユーザ名を抽出し、登録済みtwitterIDに通知すべく、Twitter通知
+WebAPIを呼び出します。
 
 topページ
 　https://example.com/top
@@ -12,6 +14,10 @@ topページ
 
 Twitter通知機能の強制呼び出し
 　https://example.com/alert
+
+
+※CakePHP練習用に作ったWebアプリのため、セキュリティ対策全般に緩いです。
+※database.phpは環境に合わせ修正が必要です。
 
 
 # CakePHP
