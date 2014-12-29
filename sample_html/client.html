@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form action="http://example.com/expression/add" method="post">
+        uuid: 12345 <input type="hidden" name="uuid" value="12345"><br>
+        expression (1-5) <input type="text" name="expression"><br>
+        score (0～+100) <input type="text" name="score"><br>
+        degree (-100～+100) <input type="text" name="degree"><br>
+        <input type="submit" value="send">
+    </form>
+
+    <pre>
+        HVC_EX_NEUTRAL = 1;
+        HVC_EX_HAPPINESS = 2;
+        HVC_EX_SURPRISE = 3;
+        HVC_EX_ANGER = 4;
+        HVC_EX_SADNESS = 5;
+    </pre>
+</body>
+</html>
